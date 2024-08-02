@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Products</h2>
+        <div class="line">
+            <div class="item">
+                <span class="product-name">Watch</span>
+                <div class="item_inside">
+                    <img src="./images/john-torcasio-TJrkkhdB39E-unsplash.jpg" alt="Watch">
+                </div>
+                <button class="button" onclick="addToBasket('Watch', 10)">Add</button>
+            </div>
+            <div class="item">
+                <span class="product-name">Smartphone</span>
+                <div class="item_inside">
+                    <img src="./images/rami-al-zayat-w33-zg-dNL4-unsplash.jpg" alt=" Smartphone">
+                </div>
+                <button class="button" onclick="addToBasket('Smartphone', 200)">Add</button>
+            </div>
+            <div class="item">
+                <span class="product-name">Sunglasses</span>
+                <div class="item_inside">
+                    <img src="./images/sebastian-coman-travel-dtOTQYmTEs0-unsplash.jpg" alt="Sunglasses">
+                </div>
+                <button class="button" onclick="addToBasket('Sunglasses', 5)">Add</button>
+            </div>
+        </div>
+        <div class="line">
+            <div class="item">
+                <span class="product-name">Wallet</span>
+                <div class="item_inside">
+                    <img src="./images/emil-kalibradov-K05Udh2LhFA-unsplash.jpg" alt="Wallet">
+                </div>
+                <button class="button" onclick="addToBasket('Wallet', 7)">Add</button>
+            </div>
+            <div class="item">
+                <span class="product-name">Backpack</span>
+                <div class="item_inside">
+                    <img src="./images/josiah-weiss-8sjBzL1IyMo-unsplash.jpg" alt="Backpack">
+                </div>
+                <button class="button" onclick="addToBasket('Backpack', 30)">Add</button>
+            </div>
+            <div class="item">
+                <span class="product-name">Earbuds</span>
+                <div class="item_inside">
+                    <img src="./images/theregisti-qt9_OfTaaeY-unsplash.jpg" alt="Earbuds">
+                </div>
+                <button class="button" onclick="addToBasket('Earbuds', 150)">Add</button>
+            </div>
+        </div>
+        <div class="basket">
+            Basket: <span id="item-count">0</span> items
+        </div>
+    </div>
+    <div class="basket-container" id="basket-container">
+        <h2>Basket</h2>
+        <div id="basket-items"></div>
+        <div id="total-price">Total: $<span id="total-amount">0</span></div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
